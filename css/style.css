@@ -1,0 +1,454 @@
+body{
+    margin: 0!important;
+    padding: 0;
+    box-sizing: inherit!important;
+}
+ul{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}html, body {
+    height: 100%;
+  }
+  
+  body {
+    background: black!important;
+  }
+  
+  .ferris_wheel ,.wheel {
+    /* border: 6px solid #fff; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  /* .ferris_wheel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale (1.4, 1.4);
+    border: 0;
+  } */
+
+  .ferris_wheel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 0;
+    /* display: flex; */
+}
+  
+  /* .wheel_wrap {
+    position: absolute;
+    animation: wheel_rotate 40s infinite linear;
+  } */
+  
+  .wheel:before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: #888;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    z-index: 1;
+  }
+  
+
+  
+  .wheel span:nth-child(1):before {
+    content: "";
+    border-bottom: 2px solid #BABCBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 480px;
+    top: 50%;
+    left: -100%;
+  }
+  
+  .wheel span:nth-child(1):after {
+    content: "";
+    border-right: 2px solid #BABCBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 480px;
+    top: -160px;
+    left: 50%;
+    transform: rotate(45deg);
+  }
+  
+  .wheel span:nth-child(2):before {
+    content: "";
+    border-right: 2px solid #BABCBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 480px;
+    top: -173px;
+    left: 43%;
+    transform: rotate(-45deg);
+}
+  
+  .wheel span:nth-child(2):after {
+    content: "";
+    border-right: 2px solid #BABCBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 480px;
+    top: -100%;
+    left: 50%;
+  }
+  
+  div.stand:before,
+  div.stand:after {
+    content: "";
+    position: absolute;
+    border-right: 4px solid #F3AE34;
+    height: 120px;
+    transform: rotate(15deg);
+    top: 88px;
+    left: 50%;
+    margin-left: -15px;
+  }
+  
+  div.stand:after {
+    transform: rotate(-15deg);
+    margin-left: 23px;
+  }
+  
+  .stand span {
+    position: absolute;
+    height: 10px;
+    background: #683C10;
+    width: 100px;
+    bottom: -60px;
+    left: 50%;
+    margin-left: -44px;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  
+  /* .buckets {
+    position: absolute;
+    border: 6px solid #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 1;
+  } */
+  
+  .buckets div {
+    position: absolute;
+    animation: bucket_rotate 40s infinite linear;
+    top: 50%;
+    left: 50%;
+    margin-top: 11px;
+    margin-left: -13px;
+    line-height: 20px;
+  }
+  span.test1 {
+    position: absolute;
+    left: -10px;
+    bottom: -182px;
+}
+  .test2 {
+    position: absolute;
+    left: -170px;
+    bottom: -98px;
+}
+.test3 {
+  position: absolute;
+  left: -216px;
+  bottom: 58px;
+}
+.test4 {
+  position: absolute;
+  left: -166px;
+  bottom: 222px;
+}
+.test5 {
+  position: absolute;
+  left: -10px;
+  bottom: 264px;
+}
+.test6 {
+  position: absolute;
+  left: 157px;
+  bottom: 230px;
+}
+.test7 {
+  position: absolute;
+  left: 245px;
+  bottom: 58px;
+}
+
+.test8 {
+  position: absolute;
+  left: 156px;
+  bottom: -105px;
+}
+  .item {
+    background: #6c74dd;
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+}
+.item p {
+  font-size: 12px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  body{
+    margin: 0!important;
+    padding: 0;
+    box-sizing: inherit!important;
+}
+ul{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}html, body {
+    height: 100%;
+  }
+  
+  body {
+    background: black!important;
+  }
+  
+  .ferris_wheel ,.wheel {
+    /* border: 6px solid #fff; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  /* .ferris_wheel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) scale (1.4, 1.4);
+    border: 0;
+  } */
+
+  .ferris_wheel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 0;
+    /* display: flex; */
+}
+  
+  /* .wheel_wrap {
+    position: absolute;
+    animation: wheel_rotate 40s infinite linear;
+  } */
+  
+  .wheel:before {
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: #888;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    z-index: 1;
+  }
+  
+
+  
+  .wheel span:nth-child(1):before {
+    content: "";
+    border-bottom: 2px solid #BABCBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    top: 50%;
+    left: 6px;
+  }
+  
+  .wheel span:nth-child(1):after {
+    content: "";
+    border-right: 2px solid #BABCBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    top: 6px;
+    left: 50%;
+    transform: rotate(45deg);
+  }
+  
+  .wheel span:nth-child(2):before {
+    content: "";
+    border-right: 2px solid #BABCBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    top: 5px;
+    left: 50%;
+    transform: rotate(-45deg);
+  }
+  
+  .wheel span:nth-child(2):after {
+    content: "";
+    border-right: 2px solid #BABCBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    top: 6px;
+    left: 50%;
+  }
+  
+  div.stand:before,
+  div.stand:after {
+    content: "";
+    position: absolute;
+    border-right: 4px solid #F3AE34;
+    height: 120px;
+    transform: rotate(15deg);
+    top: 88px;
+    left: 50%;
+    margin-left: -15px;
+  }
+  
+  div.stand:after {
+    transform: rotate(-15deg);
+    margin-left: 23px;
+  }
+  
+  .stand span {
+    position: absolute;
+    height: 10px;
+    background: #683C10;
+    width: 100px;
+    bottom: -60px;
+    left: 50%;
+    margin-left: -44px;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  
+  /* .buckets {
+    position: absolute;
+    border: 6px solid #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 1;
+  } */
+  
+  .buckets div {
+    position: absolute;
+    animation: bucket_rotate 40s infinite linear;
+    top: 50%;
+    left: 50%;
+    margin-top: 11px;
+    margin-left: -13px;
+  }
+  .test1{
+    position: absolute;
+    left: -23%!important;
+    bottom: -36px!important;
+  }
+  .test2 {
+    position: absolute;
+    left: -56px;
+    bottom: -16px;
+}
+.test3 {
+    position: absolute;
+    left: -86px;
+    bottom: 43px;
+}
+.test4 {
+    position: absolute;
+    left: -60px;
+    bottom: 110px;
+}
+.test5 {
+    position: absolute;
+    left: 0px;
+    bottom: 132px;
+}
+.test6 {
+    position: absolute;
+    left: 66px;
+    bottom: 108px;
+}
+.test7::after{
+  position: absolute;
+    top: 4px;
+    left: -25px;
+}
+.test7 {
+    position: absolute;
+    left: 85px;
+    bottom: 47px;
+}
+
+.test8 {
+    position: absolute;
+    left: 58px;
+    bottom: -12px;
+}
+  .item {
+    background: #6c74dd;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+}
+.item p {
+  font-size: 12px;
+}
+
+
+
+}
